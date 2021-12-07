@@ -1,0 +1,41 @@
+﻿#login-container {
+    margin: 0 auto;
+    background-color: #333333;
+    width: fit-content;
+    padding: 1.5%;
+    border-radius: 20px;
+    font-size: 200%;
+}
+
+#login-container input[type=submit] {
+    background-color: #fff;
+    color: black;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+#email{
+    margin-bottom: 20px;
+}
+
+h1{
+    color: #00fa9a;
+    text-align: center;
+}
+
+label {
+    color: white;
+}
+
+
+p{
+    color: white;
+}
+
+a{
+    color: #00fa9a;
+}
+
+a:hover{
+    color: #00fa9a;
+}

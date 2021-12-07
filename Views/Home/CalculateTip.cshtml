@@ -1,0 +1,42 @@
+﻿@model SimplBill3.Models.TipCalculator
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Tip Calculator";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DisplayTipCalculation</title>
+    <link rel="stylesheet" href="~/Content/tipCalculator.css">
+</head>
+<body>
+
+    <div>
+        <h1>Tip Calculator</h1>
+        
+        <div id="prevTip">
+            <h2>Bill Total: $@Model.total</h2>
+            <h2>Tip Percentage: @Model.tipPercentage%</h2>
+            <h2>Tip Amount: @Model.tipAmount</h2>
+            <h2>New Total: @Model.newTotal</h2>
+        </div>
+        <br />
+        <div id="tipContainer">
+            <form action="CalculateTip">
+                <label for"total"><b>Bill Total</b></label>
+                <input id="total" type="number" step="0.01" min="0.01" value="@Model.total" name="total" required>
+                <br>
+                <label for"tip"><b>Tip Percentage</b></label>
+                <br />
+                <input type="range" min="1" max="50" value="@Model.tipPercentage" oninput="this.nextElementSibling.value = this.value" name="tipPercentage" required>
+                <output>@Model.tipPercentage</output>
+                <button onclick="validateTotal(total.value)">Calculate Tip</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

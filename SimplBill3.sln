@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplBill", "SimplBill.csproj", "{D453E876-5B3C-436C-8791-CCB7A1F1B26A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D453E876-5B3C-436C-8791-CCB7A1F1B26A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D453E876-5B3C-436C-8791-CCB7A1F1B26A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D453E876-5B3C-436C-8791-CCB7A1F1B26A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D453E876-5B3C-436C-8791-CCB7A1F1B26A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E46DD756-A741-4576-A889-DF0B214FB878}
+	EndGlobalSection
+EndGlobal

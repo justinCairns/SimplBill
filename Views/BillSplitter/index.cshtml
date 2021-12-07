@@ -1,0 +1,30 @@
+﻿@model SimplBill3.Models.Bill
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Bill Splitter";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="~/Content/billSplitter.css">
+</head>
+<body>
+    <div> 
+        <h1>Bill Splitter: @Session["userEmail"].ToString()</h1>
+        <div id="bill-container">
+            <label for"total"><b>Bill Total </b></label>
+            <input id="total" type="number" step="0.01" min="0.01" placeholder="" name="total" required>
+            <br>
+            <label><b>Number of People</b></label>
+            <input type="number" placeholder=" " name="people">
+            <br>
+            <button>Split Bill</button>
+
+        </div>
+    </div>
+</body>
+</html>

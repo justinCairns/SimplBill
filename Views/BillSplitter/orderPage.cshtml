@@ -1,0 +1,59 @@
+﻿@model IEnumerable<SimplBill3.Models.Bill>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>orderPage</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.orderName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.orderTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numMembers)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.orderName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.orderTotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numMembers)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.orderId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.orderId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.orderId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
